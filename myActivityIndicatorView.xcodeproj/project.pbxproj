@@ -14,6 +14,7 @@
 		FF214B8F1B750719006DF350 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF214B8E1B750719006DF350 /* Images.xcassets */; };
 		FF214B921B750719006DF350 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF214B901B750719006DF350 /* LaunchScreen.xib */; };
 		FF214B9E1B750719006DF350 /* myActivityIndicatorViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF214B9D1B750719006DF350 /* myActivityIndicatorViewTests.m */; };
+		FF214BDD1B765984006DF350 /* WZActivityIndicatorRotateSqureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF214BDC1B765984006DF350 /* WZActivityIndicatorRotateSqureViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		FF214B971B750719006DF350 /* myActivityIndicatorViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myActivityIndicatorViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF214B9C1B750719006DF350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF214B9D1B750719006DF350 /* myActivityIndicatorViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myActivityIndicatorViewTests.m; sourceTree = "<group>"; };
+		FF214BDB1B765984006DF350 /* WZActivityIndicatorRotateSqureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WZActivityIndicatorRotateSqureViewController.h; path = Animation/WZActivityIndicatorRotateSqureViewController.h; sourceTree = "<group>"; };
+		FF214BDC1B765984006DF350 /* WZActivityIndicatorRotateSqureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WZActivityIndicatorRotateSqureViewController.m; path = Animation/WZActivityIndicatorRotateSqureViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		FF214B801B750719006DF350 /* myActivityIndicatorView */ = {
 			isa = PBXGroup;
 			children = (
+				FF214BDE1B76599E006DF350 /* Animation */,
 				FF214B851B750719006DF350 /* AppDelegate.h */,
 				FF214B861B750719006DF350 /* AppDelegate.m */,
 				FF214B881B750719006DF350 /* ViewController.h */,
@@ -117,6 +121,15 @@
 				FF214B9C1B750719006DF350 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF214BDE1B76599E006DF350 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				FF214BDB1B765984006DF350 /* WZActivityIndicatorRotateSqureViewController.h */,
+				FF214BDC1B765984006DF350 /* WZActivityIndicatorRotateSqureViewController.m */,
+			);
+			name = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +234,7 @@
 			files = (
 				FF214B8A1B750719006DF350 /* ViewController.m in Sources */,
 				FF214B871B750719006DF350 /* AppDelegate.m in Sources */,
+				FF214BDD1B765984006DF350 /* WZActivityIndicatorRotateSqureViewController.m in Sources */,
 				FF214B841B750719006DF350 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
