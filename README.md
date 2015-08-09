@@ -3,3 +3,4 @@
   
     Day 1 试出了同步Xcode文件和Github的方法，开心：）
     Day 2 学习Core Animation的概念，做了一个旋转的方块。
+    Day 3 今天我认识到自己到目标对现在的我太大了，考虑了一晚上，不知道程序怎么从整体上设计，所以还是努力设计好一个ActivityIndicator吧！加油！
