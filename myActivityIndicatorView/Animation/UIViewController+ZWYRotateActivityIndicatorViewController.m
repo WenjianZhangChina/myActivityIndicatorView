@@ -1,26 +1,26 @@
 //
-//  WZActivityIndicatorRotateSqureViewController.m
+//  UIViewController+ZWYRotateActivityIndicatorViewController.m
 //  myActivityIndicatorView
 //
-//  Created by zwj on 15/8/8.
+//  Created by zwj on 15/8/9.
 //  Copyright (c) 2015年 zwj. All rights reserved.
 //
 
-#import "WZActivityIndicatorRotateSqureViewController.h"
+#import "UIViewController+ZWYRotateActivityIndicatorViewController.h"
 
-@implementation WZActivityIndicatorRotateSqureViewController
+@implementation UIViewController (ZWYRotateActivityIndicatorViewController)
 
-- (void)moveLayerRotate
+- (void)moveLayerYRotate
 {
     
     CALayer *kkLayer = [[CALayer alloc]init];
     kkLayer.backgroundColor = [[UIColor grayColor]CGColor];
-    kkLayer.frame = CGRectMake(50, 217, 40, 40);
+    kkLayer.frame = CGRectMake(100, 217, 40, 40);
     kkLayer.cornerRadius = 5;
     [self.view.layer addSublayer:kkLayer];
     
-    // 以x轴进行旋转
-    CABasicAnimation *rotateAnimation  = [CABasicAnimation animationWithKeyPath:@"transform.rotation.x"];
+    // 以y轴进行旋转
+    CABasicAnimation *rotateAnimation  = [CABasicAnimation animationWithKeyPath:@"transform.rotation.y"];
     rotateAnimation.fromValue = [NSNumber numberWithFloat:0.0];
     rotateAnimation.toValue = [NSNumber numberWithFloat:6.0 * M_PI];
     rotateAnimation.duration = 3;
@@ -29,5 +29,6 @@
     [kkLayer addAnimation:rotateAnimation forKey:@"animationRotate"];
     
 }
+
 
 @end
