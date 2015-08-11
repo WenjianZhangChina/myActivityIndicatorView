@@ -14,7 +14,11 @@
 		FF214B8F1B750719006DF350 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF214B8E1B750719006DF350 /* Images.xcassets */; };
 		FF214B921B750719006DF350 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF214B901B750719006DF350 /* LaunchScreen.xib */; };
 		FF214B9E1B750719006DF350 /* myActivityIndicatorViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF214B9D1B750719006DF350 /* myActivityIndicatorViewTests.m */; };
-		FF214BDD1B765984006DF350 /* WZActivityIndicatorRotateSqureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF214BDC1B765984006DF350 /* WZActivityIndicatorRotateSqureViewController.m */; };
+		FF8B79491B778E9D00ECBCAE /* ActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8B79481B778E9D00ECBCAE /* ActivityIndicatorView.m */; };
+		FF8B79881B7A311300ECBCAE /* BulbLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8B79871B7A311300ECBCAE /* BulbLayer.m */; };
+		FF8B798B1B7A313900ECBCAE /* BulbView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8B798A1B7A313900ECBCAE /* BulbView.m */; };
+		FF8B798D1B7A315400ECBCAE /* bulb.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8B798C1B7A315400ECBCAE /* bulb.png */; };
+		FF8B798F1B7A395C00ECBCAE /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8B798E1B7A395C00ECBCAE /* heart.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +45,15 @@
 		FF214B971B750719006DF350 /* myActivityIndicatorViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myActivityIndicatorViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF214B9C1B750719006DF350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF214B9D1B750719006DF350 /* myActivityIndicatorViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myActivityIndicatorViewTests.m; sourceTree = "<group>"; };
-		FF214BDB1B765984006DF350 /* WZActivityIndicatorRotateSqureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WZActivityIndicatorRotateSqureViewController.h; path = Animation/WZActivityIndicatorRotateSqureViewController.h; sourceTree = "<group>"; };
-		FF214BDC1B765984006DF350 /* WZActivityIndicatorRotateSqureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WZActivityIndicatorRotateSqureViewController.m; path = Animation/WZActivityIndicatorRotateSqureViewController.m; sourceTree = "<group>"; };
+		FF8B79471B778E9D00ECBCAE /* ActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActivityIndicatorView.h; path = Animation/ActivityIndicatorView.h; sourceTree = "<group>"; };
+		FF8B79481B778E9D00ECBCAE /* ActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActivityIndicatorView.m; path = Animation/ActivityIndicatorView.m; sourceTree = "<group>"; };
+		FF8B79851B7A30E900ECBCAE /* Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		FF8B79861B7A310000ECBCAE /* BulbLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulbLayer.h; sourceTree = "<group>"; };
+		FF8B79871B7A311300ECBCAE /* BulbLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BulbLayer.m; sourceTree = "<group>"; };
+		FF8B79891B7A312A00ECBCAE /* BulbView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulbView.h; sourceTree = "<group>"; };
+		FF8B798A1B7A313900ECBCAE /* BulbView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BulbView.m; sourceTree = "<group>"; };
+		FF8B798C1B7A315400ECBCAE /* bulb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bulb.png; sourceTree = "<group>"; };
+		FF8B798E1B7A395C00ECBCAE /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +111,8 @@
 		FF214B811B750719006DF350 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FF8B798E1B7A395C00ECBCAE /* heart.png */,
+				FF8B798C1B7A315400ECBCAE /* bulb.png */,
 				FF214B821B750719006DF350 /* Info.plist */,
 				FF214B831B750719006DF350 /* main.m */,
 			);
@@ -126,8 +139,13 @@
 		FF214BDE1B76599E006DF350 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
-				FF214BDB1B765984006DF350 /* WZActivityIndicatorRotateSqureViewController.h */,
-				FF214BDC1B765984006DF350 /* WZActivityIndicatorRotateSqureViewController.m */,
+				FF8B79851B7A30E900ECBCAE /* Defines.h */,
+				FF8B79861B7A310000ECBCAE /* BulbLayer.h */,
+				FF8B79871B7A311300ECBCAE /* BulbLayer.m */,
+				FF8B79891B7A312A00ECBCAE /* BulbView.h */,
+				FF8B798A1B7A313900ECBCAE /* BulbView.m */,
+				FF8B79471B778E9D00ECBCAE /* ActivityIndicatorView.h */,
+				FF8B79481B778E9D00ECBCAE /* ActivityIndicatorView.m */,
 			);
 			name = Animation;
 			sourceTree = "<group>";
@@ -212,7 +230,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF8B798D1B7A315400ECBCAE /* bulb.png in Resources */,
 				FF214B8D1B750719006DF350 /* Main.storyboard in Resources */,
+				FF8B798F1B7A395C00ECBCAE /* heart.png in Resources */,
 				FF214B921B750719006DF350 /* LaunchScreen.xib in Resources */,
 				FF214B8F1B750719006DF350 /* Images.xcassets in Resources */,
 			);
@@ -233,9 +253,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF214B8A1B750719006DF350 /* ViewController.m in Sources */,
+				FF8B79881B7A311300ECBCAE /* BulbLayer.m in Sources */,
 				FF214B871B750719006DF350 /* AppDelegate.m in Sources */,
-				FF214BDD1B765984006DF350 /* WZActivityIndicatorRotateSqureViewController.m in Sources */,
 				FF214B841B750719006DF350 /* main.m in Sources */,
+				FF8B79491B778E9D00ECBCAE /* ActivityIndicatorView.m in Sources */,
+				FF8B798B1B7A313900ECBCAE /* BulbView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +452,7 @@
 				FF214BA31B750719006DF350 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF214BA41B750719006DF350 /* Build configuration list for PBXNativeTarget "myActivityIndicatorViewTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +461,7 @@
 				FF214BA61B750719006DF350 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
