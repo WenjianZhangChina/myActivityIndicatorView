@@ -248,6 +248,8 @@ static CATransform3D WZSpinKit3DRotationWithPerspective(CGFloat perspective,
             break;
         }
         case WZActivityIndicatorStyleRotateSquare:{
+            NSTimeInterval beginTime = CACurrentMediaTime();
+            
             CALayer *kkLayer = [[CALayer alloc]init];
             kkLayer.backgroundColor = [[UIColor redColor]CGColor];
             kkLayer.frame = CGRectMake(0, 0, 40, 40);
@@ -257,23 +259,26 @@ static CATransform3D WZSpinKit3DRotationWithPerspective(CGFloat perspective,
             // 以x轴进行旋转
             CABasicAnimation *rotateXAnimation  = [CABasicAnimation animationWithKeyPath:@"transform.rotation.x"];
             rotateXAnimation.fromValue = [NSNumber numberWithFloat:0.0];
-            rotateXAnimation.toValue = [NSNumber numberWithFloat:6.0 * M_PI];
-            rotateXAnimation.duration = 3;
+            rotateXAnimation.toValue = [NSNumber numberWithFloat:2.0 * M_PI];
+            rotateXAnimation.duration = 2;
             rotateXAnimation.repeatCount = NSNotFound;
+            //rotateXAnimation.beginTime = beginTime;
+            rotateXAnimation.repeatDuration = 2;
             
             CABasicAnimation *rotateYAnimation  = [CABasicAnimation animationWithKeyPath:@"transform.rotation.y"];
             rotateYAnimation.fromValue = [NSNumber numberWithFloat:0.0];
-            rotateYAnimation.toValue = [NSNumber numberWithFloat:6.0 * M_PI];
-            rotateYAnimation.duration = 3;
+            rotateYAnimation.toValue = [NSNumber numberWithFloat:2.0 * M_PI];
+            rotateYAnimation.duration = 2;
             rotateYAnimation.repeatCount = NSNotFound;
-            
+            //rotateYAnimation.beginTime = beginTime +3;
+            [rotateYAnimation setBeginTime:2.0f];
             CAAnimationGroup *group = [CAAnimationGroup animation];
             
             group.animations = [NSArray arrayWithObjects:rotateXAnimation, rotateYAnimation,nil];
             
             group.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
             
-            group.duration = 12;
+            group.duration = 4;
             
             //group.fillMode = kCAFillModeForwards;
             
