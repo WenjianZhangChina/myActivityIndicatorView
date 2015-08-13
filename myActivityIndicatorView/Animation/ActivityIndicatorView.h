@@ -13,9 +13,10 @@ typedef NS_ENUM(NSInteger, WZSpinKitViewStyle) {
     WZSpinKitViewStyleBounce,
     WZSpinKitViewStyleWave,
     WZSpinKitViewStyleWanderingCubes,
-    WZSpinKitViewStylePulse,
+    WZActivityIndicatorStyleLights,
     WZActivityIndicatorStyleRotateSquare,
-    WZActivityIndicatorStyleBulb,
+    WZActivityIndicatorStyleHeart,
+    WZActivityIndicatorStyleRevolution,
 };
 
 @interface WZSpinKitView : UIView

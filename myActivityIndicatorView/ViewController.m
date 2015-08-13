@@ -8,9 +8,6 @@
 
 #import "ActivityIndicatorView.h"
 #import "ViewController.h"
-#import "Defines.h"
-#import "BulbLayer.h"
-#import "BulbView.h"
 
 @interface ViewController ()
 
@@ -64,27 +61,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-- (void)moveLayerRotate
-{
-    
-    CALayer *kkLayer = [[CALayer alloc]init];
-    kkLayer.backgroundColor = [[UIColor grayColor]CGColor];
-    kkLayer.frame = CGRectMake(50, 217, 40, 40);
-    kkLayer.cornerRadius = 5;
-    [self.view.layer addSublayer:kkLayer];
-    
-    // 以x轴进行旋转
-    CABasicAnimation *rotateAnimation  = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-    rotateAnimation.fromValue = [NSNumber numberWithFloat:0.0];
-    rotateAnimation.toValue = [NSNumber numberWithFloat:6.0 * M_PI];
-    rotateAnimation.duration = 4;
-    rotateAnimation.repeatCount = NSNotFound;
-    
-    [kkLayer addAnimation:rotateAnimation forKey:@"animationRotate"];
-    
-}
-
 -(void)insertSpinner:(WZSpinKitView*)spinner
              atIndex:(NSInteger)index
      backgroundColor:(UIColor*)backgroundColor
@@ -111,7 +87,7 @@
     self.view = scrollView;
     
     [self insertSpinner:[[WZSpinKitView alloc] initWithStyle:WZSpinKitViewStylePlane color:[UIColor whiteColor]]
-                atIndex:0
+                atIndex:8
         backgroundColor:[UIColor colorWithRed:0.827 green:0.329 blue:0 alpha:1.0]];
     
     [self insertSpinner:[[WZSpinKitView alloc] initWithStyle:WZSpinKitViewStyleBounce color:[UIColor whiteColor]]
@@ -126,19 +102,22 @@
                 atIndex:3
         backgroundColor:[UIColor colorWithRed:0.161 green:0.502 blue:0.725 alpha:1.0]];
     
-    [self insertSpinner:[[WZSpinKitView alloc] initWithStyle:WZSpinKitViewStylePulse color:[UIColor whiteColor]]
+    [self insertSpinner:[[WZSpinKitView alloc] initWithStyle:WZActivityIndicatorStyleLights color:[UIColor whiteColor]]
                 atIndex:4
         backgroundColor:[UIColor colorWithRed:0.498 green:0.549 blue:0.553 alpha:1.0]];
     
-    [self insertSpinner:[[WZSpinKitView alloc] initWithStyle:WZActivityIndicatorStyleRotateSquare color:[UIColor redColor]] atIndex:5 backgroundColor:[UIColor whiteColor]];
+    [self insertSpinner:[[WZSpinKitView alloc] initWithStyle:WZActivityIndicatorStyleRotateSquare color:[UIColor redColor]]
+                atIndex:5
+        backgroundColor:[UIColor colorWithRed:0.900 green:0.873 blue:0.522 alpha:1]];
     
-    [self insertSpinner:[[WZSpinKitView alloc] initWithStyle:WZActivityIndicatorStyleBulb color:[UIColor redColor]] atIndex:6 backgroundColor:[UIColor whiteColor]];
-    
-   
-
+    [self insertSpinner:[[WZSpinKitView alloc] initWithStyle:WZActivityIndicatorStyleHeart color:[UIColor redColor]]
+                atIndex:6
+        backgroundColor:[UIColor whiteColor]];
+    [self insertSpinner:[[WZSpinKitView alloc] initWithStyle:WZActivityIndicatorStyleRevolution color:[UIColor redColor]]
+                atIndex:0 backgroundColor:[UIColor whiteColor]];
     
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
-    scrollView.contentSize = CGSizeMake(7 * CGRectGetWidth(screenBounds), CGRectGetHeight(screenBounds));
+    scrollView.contentSize = CGSizeMake(8 * CGRectGetWidth(screenBounds), CGRectGetHeight(screenBounds));
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle {
