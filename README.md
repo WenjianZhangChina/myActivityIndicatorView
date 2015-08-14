@@ -10,7 +10,7 @@
     WZActivityIndicatorStyleWave,（风吹麦浪，啦啦啦）
   
 
-  我在Github上看到别人用swift写到活动指示器 https://github.com/ninjaprox/NVActivityIndicatorView ，感觉很有趣，便准备做一个相似到小项目，也是活动指示器，但是用的语言是Objective－C。
+  该项目受到了 https://github.com/ninjaprox/NVActivityIndicatorView 的启发，但是我们的实现语言，方法和展示方式都迥然不同。
     
     学习过程：
   
