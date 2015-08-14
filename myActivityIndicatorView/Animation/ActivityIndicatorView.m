@@ -258,7 +258,7 @@ static CATransform3D WZSpinKit3DRotationWithPerspective(CGFloat perspective,
                 [yellowLight addAnimation:yellowOpacityAnim forKey:@"blink"];
                 break;
             }
-            //  跳动的圆形
+            //  两个跳动的同心圆形，一个收缩一个膨胀
             case  WZActivityIndicatorStyleBounce: {
                 NSTimeInterval beginTime = CACurrentMediaTime();
                 
@@ -295,7 +295,7 @@ static CATransform3D WZSpinKit3DRotationWithPerspective(CGFloat perspective,
                 }
                     break;
             }
-            //  波浪形的长条
+            //  波浪形的长条，很舒服
             case WZActivityIndicatorStyleWave: {
                 NSTimeInterval beginTime = CACurrentMediaTime() + 1.2;
                 CGFloat barWidth = CGRectGetWidth(self.bounds) / 5.0;
