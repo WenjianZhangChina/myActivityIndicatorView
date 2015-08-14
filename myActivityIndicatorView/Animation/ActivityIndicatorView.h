@@ -8,24 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSInteger, WZSpinKitViewStyle) {
-    WZSpinKitViewStylePlane,
-    WZSpinKitViewStyleBounce,
-    WZSpinKitViewStyleWave,
-    WZSpinKitViewStyleWanderingCubes,
-    WZActivityIndicatorStyleLights,
-    WZActivityIndicatorStyleRotateSquare,
-    WZActivityIndicatorStyleHeart,
+typedef NS_ENUM(NSInteger, WZActivityIndicatorStyle) {
     WZActivityIndicatorStyleRevolution,
+    WZActivityIndicatorStyleHeart,
+    WZActivityIndicatorStyleRotateSquare,
+    WZActivityIndicatorStyleMicrosoft,
+    WZActivityIndicatorStyleLights,
+    WZActivityIndicatorStyleBounce,
+    WZActivityIndicatorStyleWave,
 };
 
-@interface WZSpinKitView : UIView
+@interface WZActivityIndicatorView : UIView
 
 @property (nonatomic, strong) UIColor *color;
 @property (nonatomic, assign) BOOL hidesWhenStopped;
 
--(instancetype)initWithStyle:(WZSpinKitViewStyle)style;
--(instancetype)initWithStyle:(WZSpinKitViewStyle)style color:(UIColor*)color;
+-(instancetype)initWithStyle:(WZActivityIndicatorStyle)style;
+-(instancetype)initWithStyle:(WZActivityIndicatorStyle)style color:(UIColor*)color;
 
 -(void)startAnimating;
 -(void)stopAnimating;
