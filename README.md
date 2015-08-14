@@ -10,7 +10,8 @@
     WZActivityIndicatorStyleWave,（风吹麦浪，啦啦啦）
     
       
-      ![image](https://github.com/WenjianZhangChina/myActivityIndicatorView/blob/master/myActivityIndicatorView/demo-wavestyle.png)
+![image](https://github.com/WenjianZhangChina/myActivityIndicatorView/blob/master/myActivityIndicatorView/demo-wavestyle.png) 
+      
       
   
 
