@@ -17,6 +17,7 @@
 		FF8B79491B778E9D00ECBCAE /* ActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8B79481B778E9D00ECBCAE /* ActivityIndicatorView.m */; };
 		FF8B798F1B7A395C00ECBCAE /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8B798E1B7A395C00ECBCAE /* heart.png */; };
 		FF8B79911B7DAED800ECBCAE /* demo.mov in Resources */ = {isa = PBXBuildFile; fileRef = FF8B79901B7DAED800ECBCAE /* demo.mov */; };
+		FF8B79A01B7DC70700ECBCAE /* demo-wavestyle.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8B799F1B7DC70700ECBCAE /* demo-wavestyle.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		FF8B79481B778E9D00ECBCAE /* ActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActivityIndicatorView.m; path = Animation/ActivityIndicatorView.m; sourceTree = "<group>"; };
 		FF8B798E1B7A395C00ECBCAE /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
 		FF8B79901B7DAED800ECBCAE /* demo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = demo.mov; sourceTree = "<group>"; };
+		FF8B799F1B7DC70700ECBCAE /* demo-wavestyle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "demo-wavestyle.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				FF8B79901B7DAED800ECBCAE /* demo.mov */,
+				FF8B799F1B7DC70700ECBCAE /* demo-wavestyle.png */,
 				FF8B798E1B7A395C00ECBCAE /* heart.png */,
 				FF214B821B750719006DF350 /* Info.plist */,
 				FF214B831B750719006DF350 /* main.m */,
@@ -219,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF214B8D1B750719006DF350 /* Main.storyboard in Resources */,
+				FF8B79A01B7DC70700ECBCAE /* demo-wavestyle.png in Resources */,
 				FF8B798F1B7A395C00ECBCAE /* heart.png in Resources */,
 				FF214B921B750719006DF350 /* LaunchScreen.xib in Resources */,
 				FF8B79911B7DAED800ECBCAE /* demo.mov in Resources */,
