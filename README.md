@@ -8,6 +8,10 @@
     WZActivityIndicatorStyleLights,（红绿灯）
     WZActivityIndicatorStyleBounce,（同心圆，一个膨胀一个收缩）
     WZActivityIndicatorStyleWave,（风吹麦浪，啦啦啦）
+    
+      
+      ![image](https://github.com/WenjianZhangChina/myActivityIndicatorView/blob/master/myActivityIndicatorView/demo-wavestyle.png)
+      
   
 
   该项目受到了 https://github.com/ninjaprox/NVActivityIndicatorView 的启发，但是我们的实现语言，方法和展示方式都迥然不同。
