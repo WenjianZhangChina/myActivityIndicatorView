@@ -16,7 +16,7 @@
 		FF214B9E1B750719006DF350 /* myActivityIndicatorViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF214B9D1B750719006DF350 /* myActivityIndicatorViewTests.m */; };
 		FF8B79491B778E9D00ECBCAE /* ActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8B79481B778E9D00ECBCAE /* ActivityIndicatorView.m */; };
 		FF8B798F1B7A395C00ECBCAE /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8B798E1B7A395C00ECBCAE /* heart.png */; };
-		FF8B79911B7DAED800ECBCAE /* animation.mov in Resources */ = {isa = PBXBuildFile; fileRef = FF8B79901B7DAED800ECBCAE /* animation.mov */; };
+		FF8B79911B7DAED800ECBCAE /* demo.mov in Resources */ = {isa = PBXBuildFile; fileRef = FF8B79901B7DAED800ECBCAE /* demo.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,7 @@
 		FF8B79471B778E9D00ECBCAE /* ActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActivityIndicatorView.h; path = Animation/ActivityIndicatorView.h; sourceTree = "<group>"; };
 		FF8B79481B778E9D00ECBCAE /* ActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActivityIndicatorView.m; path = Animation/ActivityIndicatorView.m; sourceTree = "<group>"; };
 		FF8B798E1B7A395C00ECBCAE /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
-		FF8B79901B7DAED800ECBCAE /* animation.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = animation.mov; sourceTree = "<group>"; };
+		FF8B79901B7DAED800ECBCAE /* demo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = demo.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,7 @@
 		FF214B811B750719006DF350 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FF8B79901B7DAED800ECBCAE /* animation.mov */,
+				FF8B79901B7DAED800ECBCAE /* demo.mov */,
 				FF8B798E1B7A395C00ECBCAE /* heart.png */,
 				FF214B821B750719006DF350 /* Info.plist */,
 				FF214B831B750719006DF350 /* main.m */,
@@ -221,7 +221,7 @@
 				FF214B8D1B750719006DF350 /* Main.storyboard in Resources */,
 				FF8B798F1B7A395C00ECBCAE /* heart.png in Resources */,
 				FF214B921B750719006DF350 /* LaunchScreen.xib in Resources */,
-				FF8B79911B7DAED800ECBCAE /* animation.mov in Resources */,
+				FF8B79911B7DAED800ECBCAE /* demo.mov in Resources */,
 				FF214B8F1B750719006DF350 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
